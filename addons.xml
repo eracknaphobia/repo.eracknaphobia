@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="plugin.video.beergeeks" name="Beer Geeks" version="2015.8.18" provider-name="eracknaphobia">
+  <requires>
+   <import addon="xbmc.python" version="2.1.0"/>
+   <import addon="script.module.simplejson" version="3.3.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Beer Geeks</summary>
+    <description lang="en">Travel with master brewer Michael Ferguson as he visits the top craft beer breweries in the country. Discover all kinds of ales and lagers from IPAs to stouts, from pilsners to bocks, and many, many more on Beer Geeks!</description>
+    <disclaimer lang="en"></disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.livestream" name="Livestream" version="2015.10.2" provider-name="eracknaphobia">
+  <requires>
+   <import addon="xbmc.python" version="2.1.0"/>
+   <import addon="script.module.simplejson" version="3.3.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Livestream.com Videos</summary>
+    <description lang="en">Livestream, formerly known as Mogulus, is a live streaming video platform that allows users to view and broadcast video content using a camera and a computer through the internet.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=230355</forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.nbcsnliveextra" name="NBC Sports Live Extra" version="2015.9.17" provider-name="eracknaphobia">
+  <requires>
+   <import addon="xbmc.python" version="2.1.0"/>
+   <import addon="script.module.simplejson" version="3.3.0"/>
+   <import addon="script.module.httplib2" version="0.8.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="nbcsn.py">
+        <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Watch NBCSN Live Extra</summary>
+    <description lang="en">NBC Sports Live Extra is a service that allows you to watch NBC Sports coverage of live events from NBC and NBCSports Network</description>
+    <disclaimer lang="en"></disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=207159</forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.adobepass"
+       name="adobepass"
+       version="2015.8.21"
+       provider-name="eracknaphobia">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.httplib2" version="0.8.0"/>
+  </requires>
+  <extension point="xbmc.python.module"
+             library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <language></language>
+    <summary lang="en">Simplify Logins to services that require adobe pass</summary>
+    <description lang="en">Simplify Logins to services that require adobe pass</description>
+    <disclaimer lang="en"></disclaimer>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <website></website>
+    <source></source>
+  </extension>
+</addon>
+</addons>
