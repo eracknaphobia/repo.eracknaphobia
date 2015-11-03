@@ -70,7 +70,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.nbcsnliveextra" name="NBC Sports Live Extra" version="2015.9.17" provider-name="eracknaphobia">
+<addon id="plugin.video.nbcsnliveextra" name="NBC Sports Live Extra" version="2015.11.3" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.1.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
