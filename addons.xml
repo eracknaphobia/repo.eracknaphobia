@@ -47,7 +47,11 @@
   </extension>
 </addon>
 
+<<<<<<< HEAD
+<addon id="plugin.video.livestream" name="Livestream" version="2015.11.12" provider-name="eracknaphobia">
+=======
 <addon id="plugin.video.livestream" name="Livestream" version="2015.10.21" provider-name="eracknaphobia">
+>>>>>>> origin/master
   <requires>
    <import addon="xbmc.python" version="2.1.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
