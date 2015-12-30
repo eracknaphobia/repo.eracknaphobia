@@ -24,9 +24,9 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.beergeeks" name="Beer Geeks" version="2015.8.18" provider-name="eracknaphobia">
+<addon id="plugin.video.beergeeks" name="Beer Geeks" version="2015.12.30" provider-name="eracknaphobia">
   <requires>
-   <import addon="xbmc.python" version="2.1.0"/>
+   <import addon="xbmc.python" version="2.20.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="main.py">
@@ -72,7 +72,7 @@
 
 <addon id="plugin.video.nbcsnliveextra" name="NBC Sports Live Extra" version="2015.12.29" provider-name="eracknaphobia">
   <requires>
-   <import addon="xbmc.python" version="2.1.0"/>
+   <import addon="xbmc.python" version="2.20.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
    <import addon="script.module.httplib2" version="0.8.0"/>
   </requires>
@@ -91,7 +91,7 @@
     <forum>http://forum.kodi.tv/showthread.php?tid=207159</forum>
     <website></website>
     <email></email>
-    <source></source>
+    <source>https://github.com/eracknaphobia/plugin.video.nbcsnliveextra</source>
   </extension>
 </addon>
 
