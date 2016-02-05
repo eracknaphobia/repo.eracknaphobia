@@ -24,9 +24,9 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.beergeeks" name="Beer Geeks" version="2015.12.30" provider-name="eracknaphobia">
+<addon id="plugin.video.beergeeks" name="Beer Geeks" version="2015.8.2" provider-name="eracknaphobia">
   <requires>
-   <import addon="xbmc.python" version="2.20.0"/>
+   <import addon="xbmc.python" version="2.1.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="main.py">
@@ -47,9 +47,9 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.livestream" name="Livestream" version="2016.1.8" provider-name="eracknaphobia">
+<addon id="plugin.video.livestream" name="Livestream" version="2015.8.29" provider-name="eracknaphobia">
   <requires>
-   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="xbmc.python" version="2.1.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="main.py">
@@ -70,28 +70,28 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.nbcsnliveextra" name="NBC Sports Live Extra" version="2016.2.3.2" provider-name="eracknaphobia">
+<addon id="plugin.video.nhl-gamecenter" name="NHL Gamecenter" version="0.8.4" provider-name="EllisD, eracknaphobia,cookiemonster70">
   <requires>
-   <import addon="xbmc.python" version="2.14.0"/>
-   <import addon="script.module.simplejson" version="3.3.0"/>
-   <import addon="script.module.httplib2" version="0.8.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.simplejson" version="3.3.0"/>
+    	<import addon="script.module.httplib2" version="0.8.0"/>
+    	<import addon="script.module.pil" version="1.1.7"/>
   </requires>
-  <extension point="xbmc.python.pluginsource" library="nbcsn.py">
+  <extension point="xbmc.python.pluginsource" library="default.py">
         <provides>video</provides>
   </extension>
-
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en">Watch NBCSN Live Extra</summary>
-    <description lang="en">NBC Sports Live Extra is a service that allows you to watch NBC Sports coverage of live events from NBC and NBCSports Network</description>
+    <summary>NHL GameCenter LIVE™ is an online service offering streaming video of live games.</summary>
+    <description>NHL GameCenter LIVE™ is an online service offering streaming video of live games.</description>
     <disclaimer lang="en"></disclaimer>
     <language>en</language>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum>http://forum.kodi.tv/showthread.php?tid=207159</forum>
+    <forum>http://forum.xbmc.org/showthread.php?tid=207041</forum>
     <website></website>
     <email></email>
-    <source></source>
+    <source>https://github.com/dannyellis/plugin.video.nhl-gamecenter.git</source>
   </extension>
 </addon>
 
@@ -119,25 +119,16 @@
   </extension>
 </addon>
 
-<addon id="script.module.adobepass"
-       name="adobepass"
-       version="2015.8.21"
-       provider-name="eracknaphobia">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.httplib2" version="0.8.0"/>
-  </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <language></language>
-    <summary lang="en">Simplify Logins to services that require adobe pass</summary>
-    <description lang="en">Simplify Logins to services that require adobe pass</description>
-    <disclaimer lang="en"></disclaimer>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <website></website>
-    <source></source>
-  </extension>
+<addon id="repository.eracknaphobia" name="eracknaphobia's Repo" version="1.0.0" provider-name="eracknaphobia">
+	<extension point="xbmc.addon.repository" name="eracknaphobia's Repo">
+		<info compressed="false">https://github.com/eracknaphobia/repo.eracknaphobia/raw/master/addons.xml</info>
+		<checksum>https://github.com/eracknaphobia/repo.eracknaphobia/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/eracknaphobia/repo.eracknaphobia/raw/master/addons/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>eracknaphobia's Repo</summary>
+		<description>eracknaphobia's Repo</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 </addons>
