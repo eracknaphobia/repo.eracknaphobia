@@ -70,6 +70,32 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2016.3.4" provider-name="eracknaphobia">
+  <requires>
+   <import addon="xbmc.python" version="2.19.0"/>
+   <import addon="script.module.simplejson" version="3.3.0"/>
+   <import addon="script.module.pytz" version="2014.2" />
+   <import addon="script.module.beautifulsoup4" version="4.3.1" />
+   <import addon="script.module.pil" version="1.1.7"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Watch every out-of-market regular season game in the office or on the go. The #1 LIVE Streaming Sports Service</summary>
+    <description lang="en">Watch every out-of-market regular season game in the office or on the go. The #1 LIVE Streaming Sports Service</description>
+    <disclaimer lang="en"></disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source>https://github.com/eracknaphobia/plugin.video.mlbtv</source>
+  </extension>
+</addon>
+
 <addon id="plugin.video.nbcsnliveextra" name="NBC Sports Live Extra" version="2016.2.3.2" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.14.0"/>
