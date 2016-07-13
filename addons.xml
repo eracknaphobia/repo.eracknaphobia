@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.amaproracing" name="AMA Pro Racing" version="2015.8.8" provider-name="eracknaphobia">
+<addon id="plugin.video.amaproracing" name="AMA Pro Racing" version="2016.7.13" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.1.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
