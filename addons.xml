@@ -146,12 +146,38 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.nhlgcl" name="NHL TV™" version="2016.11.15" provider-name="eracknaphobia">
+<addon id="plugin.video.nbcsnliveextra-beta" name="NBC Sports Live Extra" version="2016.11.18" provider-name="eracknaphobia">
+  <requires>
+   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="script.module.simplejson" version="3.3.0"/>
+   <import addon="script.module.httplib2" version="0.8.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="nbcsn.py">
+        <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Watch NBCSN Live Extra</summary>
+    <description lang="en">NBC Sports Live Extra is a service that allows you to watch NBC Sports coverage of live events from NBC and NBCSports Network</description>
+    <disclaimer lang="en"></disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum>http://forum.kodi.tv/showthread.php?tid=207159</forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.nhlgcl" name="NHL TV™" version="2016.11.18" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.19.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
    <import addon="script.module.pytz" version="2014.2" />
    <import addon="script.module.beautifulsoup4" version="4.3.1" />
+   <import addon="script.module.nhlscoreupdates" version="2016.11.15" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
