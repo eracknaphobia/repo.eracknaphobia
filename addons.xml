@@ -96,7 +96,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.mmlive" name="March Madness Live" version="2016.3.18.3" provider-name="eracknaphobia">
+<addon id="plugin.video.mmlive" name="March Madness Live" version="2017.3.16" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.14.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
