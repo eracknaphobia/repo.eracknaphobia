@@ -70,7 +70,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2016.7.28" provider-name="eracknaphobia">
+<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2016.7.13" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.19.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
@@ -96,7 +96,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.mmlive" name="March Madness Live" version="2017.3.17" provider-name="eracknaphobia">
+<addon id="plugin.video.mmlive" name="March Madness Live" version="2017.3.18" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.14.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
@@ -200,6 +200,19 @@
     <email></email>
     <source>https://github.com/eracknaphobia/plugin.video.nhlgcl</source>
   </extension>
+</addon>
+
+<addon id="repository.eracknaphobia" name="eracknaphobia's Repo" version="1.0.0" provider-name="eracknaphobia">
+	<extension point="xbmc.addon.repository" name="eracknaphobia's Repo">
+		<info compressed="false">https://github.com/eracknaphobia/repo.eracknaphobia/raw/master/addons.xml</info>
+		<checksum>https://github.com/eracknaphobia/repo.eracknaphobia/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/eracknaphobia/repo.eracknaphobia/raw/master/addons/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>eracknaphobia's Repo</summary>
+		<description>eracknaphobia's Repo</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="script.module.adobepass"
