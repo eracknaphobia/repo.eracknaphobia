@@ -96,10 +96,9 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.mmlive" name="March Madness Live" version="2017.3.18" provider-name="eracknaphobia">
+<addon id="plugin.video.mmlive" name="March Madness Live" version="2017.3.19" provider-name="eracknaphobia">
   <requires>
-   <import addon="xbmc.python" version="2.14.0"/>
-   <import addon="script.module.simplejson" version="3.3.0"/>
+   <import addon="xbmc.python" version="2.25.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
@@ -107,16 +106,16 @@
 
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en"></summary>
-    <description lang="en">The National Collegiate Athletic Association (NCAA) Men's Division I Basketball Tournament is a single-elimination tournament played each spring in the United States, currently featuring 68 college basketball teams, to determine the national championship of the major college basketball teams.</description>
-    <disclaimer lang="en"></disclaimer>
+    <summary lang="en_GB"></summary>
+    <description lang="en_GB">The National Collegiate Athletic Association (NCAA) Men's Division I Basketball Tournament is a single-elimination tournament played each spring in the United States, currently featuring 68 college basketball teams, to determine the national championship of the major college basketball teams.</description>
+    <disclaimer lang="en_GB"></disclaimer>
     <language>en</language>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <forum>http://forum.kodi.tv/showthread.php?tid=264888</forum>
     <website></website>
     <email></email>
-    <source></source>
+    <source>https://github.com/eracknaphobia/plugin.video.mmlive/tree/krypton</source>
   </extension>
 </addon>
 
@@ -202,6 +201,27 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.simpsonsworld" name="Simpsons World" version="2017.3.20" provider-name="eracknaphobia">
+  <requires>
+   <import addon="xbmc.python" version="2.25.0"/>
+   <import addon="script.module.adobepass" version="2017.3.20"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="simpsons.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">Simpsons World</summary>
+    <description lang="en_GB">Simpsons World has every episode of the series accessible to authenticated FX subscribers</description>
+    <disclaimer lang="en_GB"></disclaimer>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <source>https://github.com/eracknaphobia/plugin.video.simpsonsworld</source>
+  </extension>
+</addon>
+
 <addon id="repository.eracknaphobia" name="eracknaphobia's Repo" version="1.0.0" provider-name="eracknaphobia">
 	<extension point="xbmc.addon.repository" name="eracknaphobia's Repo">
 		<info compressed="false">https://github.com/eracknaphobia/repo.eracknaphobia/raw/master/addons.xml</info>
@@ -215,25 +235,19 @@
 	</extension>
 </addon>
 
-<addon id="script.module.adobepass"
-       name="adobepass"
-       version="2015.8.21"
-       provider-name="eracknaphobia">
+<addon id="script.module.adobepass" name="adobepass" version="2017.3.20" provider-name="eracknaphobia">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.httplib2" version="0.8.0"/>
+    <import addon="xbmc.python" version="2.25.0"/>
   </requires>
-  <extension point="xbmc.python.module"
-             library="lib" />
+  <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <language></language>
-    <summary lang="en">Simplify Logins to services that require adobe pass</summary>
-    <description lang="en">Simplify Logins to services that require adobe pass</description>
-    <disclaimer lang="en"></disclaimer>
+    <language>en</language>
+    <summary lang="en_GB">Simplify authentication to services that use adobe pass</summary>
+    <description lang="en_GB">Simplify Logins authentication services that use adobe pass</description>
+    <disclaimer lang="en_GB"></disclaimer>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <website></website>
-    <source></source>
+    <source>https://github.com/eracknaphobia/script.module.adobepass</source>
   </extension>
 </addon>
 </addons>
