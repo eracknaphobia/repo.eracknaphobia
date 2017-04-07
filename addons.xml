@@ -47,7 +47,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.crackle" name="Crackle" version="2017.3.23" provider-name="eracknaphobia">
+<addon id="plugin.video.crackle" name="Crackle" version="2017.3.24" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.25.0"/>
   </requires>
@@ -64,6 +64,34 @@
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <forum></forum>
     <source>https://github.com/eracknaphobia/plugin.video.crackle</source>
+  </extension>
+</addon>
+
+<addon id="plugin.video.fxnow" name="FXNOW" version="2017.4.7" provider-name="eracknaphobia">
+  <requires>
+   <import addon="xbmc.python" version="2.25.0"/>
+   <import addon="script.module.adobepass" version="2017.3.20"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">FXNOW</summary>
+    <description lang="en_GB">FXNOW is an on-demand video streaming service for iPhone, iPad, and Apple TV featuring critically acclaimed drama and comedy TV series, and blockbuster movies from three networks: FX, FXX, and FXM. Enjoy watching full episodes of your favorite TV shows like American Horror Story, The Americans, Archer, and It’s Always Sunny in Philadelphia. </description>
+    <disclaimer lang="en_GB"></disclaimer>
+    <news>
+- Code clean up
+    </news>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <source>https://github.com/eracknaphobia/plugin.video.fxnow</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
 
@@ -87,7 +115,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2017.4.6" provider-name="eracknaphobia">
+<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2017.4.5" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.25.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
@@ -103,8 +131,7 @@
     <description lang="en_GB">Watch every out-of-market regular season game in the office or on the go. The #1 LIVE Streaming Sports Service</description>
     <disclaimer lang="en_GB"></disclaimer>
     <news>
-- Added CDN option in settings
-- Updated stream urls
+- Updated stream url
     </news>
     <language>en</language>
     <platform>all</platform>
@@ -116,10 +143,9 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.mmlive" name="March Madness Live" version="2017.3.17" provider-name="eracknaphobia">
+<addon id="plugin.video.mmlive" name="March Madness Live" version="2017.3.19" provider-name="eracknaphobia">
   <requires>
-   <import addon="xbmc.python" version="2.14.0"/>
-   <import addon="script.module.simplejson" version="3.3.0"/>
+   <import addon="xbmc.python" version="2.25.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
@@ -127,16 +153,16 @@
 
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en"></summary>
-    <description lang="en">The National Collegiate Athletic Association (NCAA) Men's Division I Basketball Tournament is a single-elimination tournament played each spring in the United States, currently featuring 68 college basketball teams, to determine the national championship of the major college basketball teams.</description>
-    <disclaimer lang="en"></disclaimer>
+    <summary lang="en_GB"></summary>
+    <description lang="en_GB">The National Collegiate Athletic Association (NCAA) Men's Division I Basketball Tournament is a single-elimination tournament played each spring in the United States, currently featuring 68 college basketball teams, to determine the national championship of the major college basketball teams.</description>
+    <disclaimer lang="en_GB"></disclaimer>
     <language>en</language>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <forum>http://forum.kodi.tv/showthread.php?tid=264888</forum>
     <website></website>
     <email></email>
-    <source></source>
+    <source>https://github.com/eracknaphobia/plugin.video.mmlive/tree/krypton</source>
   </extension>
 </addon>
 
@@ -222,7 +248,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.simpsonsworld" name="Simpsons World" version="2017.4.5" provider-name="eracknaphobia">
+<addon id="plugin.video.simpsonsworld" name="Simpsons World" version="2017.3.29" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.25.0"/>
    <import addon="script.module.adobepass" version="2017.3.20"/>
@@ -236,18 +262,27 @@
     <description lang="en_GB">Simpsons World has every episode of the series accessible to authenticated FX subscribers</description>
     <disclaimer lang="en_GB"></disclaimer>
     <news>
-- Fixed Icon / Fanart not displaying
+- Code clean up
     </news>
     <language>en</language>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <forum>http://forum.kodi.tv/showthread.php?tid=310272</forum>
     <source>https://github.com/eracknaphobia/plugin.video.simpsonsworld</source>
-    <assets>
-      <icon>resources/icon.png</icon>
-      <fanart>resources/fanart.jpg</fanart>
-    </assets>
   </extension>
+</addon>
+
+<addon id="repository.eracknaphobia" name="eracknaphobia's Repo" version="1.0.0" provider-name="eracknaphobia">
+	<extension point="xbmc.addon.repository" name="eracknaphobia's Repo">
+		<info compressed="false">https://github.com/eracknaphobia/repo.eracknaphobia/raw/master/addons.xml</info>
+		<checksum>https://github.com/eracknaphobia/repo.eracknaphobia/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/eracknaphobia/repo.eracknaphobia/raw/master/addons/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>eracknaphobia's Repo</summary>
+		<description>eracknaphobia's Repo</description>
+		<platform>all</platform>
+	</extension>
 </addon>
 
 <addon id="script.module.adobepass" name="adobepass" version="2017.3.20" provider-name="eracknaphobia">
@@ -257,6 +292,7 @@
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
+    <language>en</language>
     <summary lang="en_GB">Simplify authentication to services that use adobe pass</summary>
     <description lang="en_GB">Simplify Logins authentication services that use adobe pass</description>
     <disclaimer lang="en_GB"></disclaimer>
