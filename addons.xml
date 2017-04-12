@@ -67,6 +67,34 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.fxnow" name="FXNOW" version="2017.4.7" provider-name="eracknaphobia">
+  <requires>
+   <import addon="xbmc.python" version="2.25.0"/>
+   <import addon="script.module.adobepass" version="2017.3.20"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="main.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">FXNOW</summary>
+    <description lang="en_GB">FXNOW is an on-demand video streaming service for iPhone, iPad, and Apple TV featuring critically acclaimed drama and comedy TV series, and blockbuster movies from three networks: FX, FXX, and FXM. Enjoy watching full episodes of your favorite TV shows like American Horror Story, The Americans, Archer, and It’s Always Sunny in Philadelphia. </description>
+    <disclaimer lang="en_GB"></disclaimer>
+    <news>
+- Code clean up
+    </news>
+    <language>en</language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <source>https://github.com/eracknaphobia/plugin.video.fxnow</source>
+    <assets>
+      <icon>resources/icon.png</icon>
+      <fanart>resources/fanart.jpg</fanart>
+    </assets>
+  </extension>
+</addon>
+
 <addon id="plugin.video.livestream" name="Livestream" version="2017.4.3" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.19.0"/>
