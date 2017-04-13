@@ -67,9 +67,9 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.fxnow" name="FXNOW" version="2017.4.7" provider-name="eracknaphobia">
+<addon id="plugin.video.fxnow" name="FXNOW" version="2017.4.12" provider-name="eracknaphobia">
   <requires>
-   <import addon="xbmc.python" version="2.25.0"/>
+   <import addon="xbmc.python" version="2.24.0"/>
    <import addon="script.module.adobepass" version="2017.3.20"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="main.py">
