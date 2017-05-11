@@ -144,7 +144,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.mmlive" name="March Madness Live" version="2017.3.17" provider-name="eracknaphobia">
+<addon id="plugin.video.mmlive" name="March Madness Live" version="2017.3.18" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.14.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
@@ -220,7 +220,7 @@
 <addon id="plugin.video.nhlgcl" name="NHL TV™" version="2017.2.24" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.24.0"/>
-   <import addon="script.module.requests" version="2.9.1"/>
+   <import addon="script.module.simplejson" version="3.3.0"/>
    <import addon="script.module.pytz" version="2014.2" />
    <import addon="script.module.beautifulsoup4" version="4.3.1" />
    <import addon="script.module.pil" version="1.1.7" />
@@ -250,7 +250,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.psvue" name="PS Vue" version="2017.4.21" provider-name="eracknaphobia">
+<addon id="plugin.video.psvue" name="PS Vue" version="2017.5.10" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.24.0"/>
    <import addon="script.module.requests" version="2.9.1"/>
@@ -261,15 +261,16 @@
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en_GB">PS Vue</summary>
-    <description lang="en_GB"></description>
-    <disclaimer lang="en_GB"></disclaimer>
+    <description lang="en_GB">PlayStation™Vue is a TV service that streams live TV, movies, and sports on a variety of your favorite devices without a cable or satellite subscription.  With powerful features that allow you to save thousands of hours of your favorite shows without recording conflicts, and Premium channels that can be purchased individually or with a multi-channel plan, TV has never been the same. No annual contracts, no conflicts, no problems.</description>
+    <disclaimer lang="en_GB">Requires a valid subscription to PS Vue which is currently only available in the US</disclaimer>
     <news>
-- Beta
+- Added Airing Date
+- Fixed list item artwork bug
     </news>
     <language>en</language>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum></forum>
+    <forum>http://forum.kodi.tv/showthread.php?tid=312858</forum>
     <source>https://github.com/eracknaphobia/plugin.video.psvue</source>
     <assets>
       <icon>resources/icon.png</icon>
