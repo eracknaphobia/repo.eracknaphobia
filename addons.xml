@@ -170,7 +170,7 @@
 
 <addon id="plugin.video.nbcsnliveextra" name="NBC Sports Live Extra" version="2017.5.24" provider-name="eracknaphobia">
   <requires>
-   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="xbmc.python" version="2.19.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="nbcsn.py">
@@ -225,7 +225,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.psvue" name="PS Vue" version="2017.5.17" provider-name="eracknaphobia">
+<addon id="plugin.video.psvue" name="PS Vue" version="2017.6.1" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.24.0"/>
    <import addon="script.module.requests" version="2.9.1"/>
@@ -239,13 +239,8 @@
     <description lang="en_GB">PlayStation™Vue is a TV service that streams live TV, movies, and sports on a variety of your favorite devices without a cable or satellite subscription.  With powerful features that allow you to save thousands of hours of your favorite shows without recording conflicts, and Premium channels that can be purchased individually or with a multi-channel plan, TV has never been the same. No annual contracts, no conflicts, no problems.</description>
     <disclaimer lang="en_GB">Requires a valid subscription to PS Vue which is currently only available in the US</disclaimer>
     <news>
-- Moved Change Profile to addon settings
-- Added Logout in addon settings
-- Added Timeline section
-- Support 2-Step Verification
-- Sort Live TV, My Shows Alphabetically
-- Sort My Shows episodes oldest to newest
-- Code clean up
+- Fix for special characters in username and password
+- Improved error notification descriptions
     </news>
     <language>en</language>
     <platform>all</platform>
