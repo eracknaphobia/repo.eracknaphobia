@@ -192,7 +192,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.nhlgcl" name="NHL TV™" version="2017.2.24" provider-name="eracknaphobia">
+<addon id="plugin.video.nhlgcl" name="NHL TV™" version="2017.10.3" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.24.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
@@ -209,11 +209,8 @@
     <description lang="en">With NHL.TV you can access revolutionary 60fps (frames per second) video through Kodi</description>
     <disclaimer lang="en"></disclaimer>
     <news>
-- Added Classic Games Section under Featured Videos
-- Renamed "No Spoilers" to "Hide Scores"
-- Bumped the xbmc.python version
-- Restructered the addon as per the Kodi wiki
-- Patched bug released in previous version that affected Kodi 16.x users
+- Added Vegas Golden Knights
+- Updated stream url's
     </news>
     <language>en</language>
     <platform>all</platform>
