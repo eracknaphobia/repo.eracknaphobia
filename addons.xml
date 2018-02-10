@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.amaproracing" name="AMA Pro Racing" version="2017.1.18" provider-name="eracknaphobia">
+<addon id="plugin.video.amaproracing" name="AMA Pro Racing" version="2018.1.27" provider-name="eracknaphobia">
   <requires>
-     <import addon="xbmc.python" version="2.1.0"/>
+     <import addon="xbmc.python" version="2.14.0"/>
      <import addon="script.module.simplejson" version="3.3.0"/>
      <import addon="plugin.video.youtube" version="4.4.10"/>
   </requires>
@@ -14,6 +14,9 @@
     <summary lang="en">Watch everything AMA Pro Racing</summary>
     <description lang="en">The AMA is the largest motorsports organization in the world, overseeing 80 professional and more than 4,000 amateur events each year. Watch live and archived full-length races, highlights and more.</description>
     <disclaimer lang="en"></disclaimer>
+    <news>
+      - Fixed bug with supercross race day live stream
+    </news>
     <language>en</language>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
@@ -24,7 +27,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.beergeeks" name="Beer Geeks" version="2016.7.13" provider-name="eracknaphobia">
+<addon id="plugin.video.beergeeks" name="Beer Geeks" version="2018.1.26" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.20.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
@@ -33,6 +36,7 @@
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
+    <broken>deprecated</broken>
     <platform>all</platform>
     <summary lang="en">Beer Geeks</summary>
     <description lang="en">Travel with master brewer Michael Ferguson as he visits the top craft beer breweries in the country. Discover all kinds of ales and lagers from IPAs to stouts, from pilsners to bocks, and many, many more on Beer Geeks!</description>
@@ -47,18 +51,23 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.crackle" name="Crackle" version="2017.3.24" provider-name="eracknaphobia">
+<addon id="plugin.video.crackle" name="Crackle" version="2018.1.27" provider-name="eracknaphobia">
   <requires>
-   <import addon="xbmc.python" version="2.25.0"/>
+      <import addon="xbmc.python" version="2.25.0"/>
+      <import addon="script.module.requests" version="2.9.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en_GB">Crackle info here</summary>
-    <description lang="en_GB">Crackle info here</description>
+    <summary lang="en_GB">Crackle delivers popular, award-winning TV, movies and originals. With no limit to how much you can watch across all your devices, you can binge all you want, wherever you want.</summary>
+    <description lang="en_GB">Crackle is a video streaming distributor of original web shows, Hollywood movies, and TV shows. Founded in the early 2000s as Grouper, and rebranded in 2007, Crackle is owned by Sony Pictures Entertainment.</description>
     <disclaimer lang="en_GB"></disclaimer>
+      <news>
+        - Added support for inputstream adaptive
+        - Code clean up
+      </news>
     <language>en</language>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
@@ -115,7 +124,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2017.4.12" provider-name="eracknaphobia">
+<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2017.11.28" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.24.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
@@ -131,8 +140,8 @@
     <description lang="en_GB">Watch every out-of-market regular season game in the office or on the go. The #1 LIVE Streaming Sports Service</description>
     <disclaimer lang="en_GB"></disclaimer>
     <news>
-- Added CDN option in settings
-- Updated stream urls
+- Fixed Invalid XML issue
+
     </news>
     <language>en</language>
     <platform>all</platform>
@@ -168,7 +177,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.nbcsnliveextra" name="NBC Sports Live Extra" version="2017.11.22" provider-name="eracknaphobia">
+<addon id="plugin.video.nbcsnliveextra" name="NBC Sports Live Extra" version="2018.2.10" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.19.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
@@ -192,7 +201,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.nhlgcl" name="NHL TV™" version="2017.11.24" provider-name="eracknaphobia">
+<addon id="plugin.video.nhlgcl" name="NHL TV™" version="2017.11.28" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.24.0"/>
    <import addon="script.module.pytz" version="2014.2" />
@@ -209,7 +218,7 @@
     <description lang="en">With NHL.TV you can access revolutionary 60fps (frames per second) video through Kodi</description>
     <disclaimer lang="en"></disclaimer>
     <news>
-- Fixed Stream Quality setting
+- Fixed Settings invalid xml issue
     </news>
     <language>en</language>
     <platform>all</platform>
@@ -221,7 +230,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.psvue" name="PS Vue" version="2017.11.21" provider-name="eracknaphobia">
+<addon id="plugin.video.psvue" name="PS Vue" version="2018.2.10" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.24.0"/>
    <import addon="script.module.requests" version="2.9.1"/>
@@ -254,10 +263,11 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.simpsonsworld" name="Simpsons World" version="2017.4.14" provider-name="eracknaphobia">
+<addon id="plugin.video.simpsonsworld" name="Simpsons World" version="2017.11.28" provider-name="eracknaphobia">
   <requires>
-   <import addon="xbmc.python" version="2.24.0"/>
-   <import addon="script.module.adobepass" version="2017.3.20"/>
+      <import addon="xbmc.python" version="2.24.0"/>
+      <import addon="script.module.adobepass" version="2017.3.20"/>
+      <import addon="script.module.requests" version="2.9.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="simpsons.py">
         <provides>video</provides>
@@ -268,7 +278,7 @@
     <description lang="en_GB">Simpsons World has every episode of the series accessible to authenticated FX subscribers</description>
     <disclaimer lang="en_GB"></disclaimer>
     <news>
-- Fixed Icon / Fanart not displaying
+- Fixed Invalid XML issue
     </news>
     <language>en</language>
     <platform>all</platform>
