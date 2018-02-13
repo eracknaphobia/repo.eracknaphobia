@@ -126,7 +126,7 @@
 
 <addon id="plugin.video.mlbtv" name="MLB.TV®" version="2017.11.28" provider-name="eracknaphobia">
   <requires>
-   <import addon="xbmc.python" version="2.24.0"/>
+   <import addon="xbmc.python" version="2.25.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
    <import addon="script.module.pytz" version="2014.2" />
    <import addon="script.module.beautifulsoup4" version="4.3.1" />
@@ -177,10 +177,12 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.nbcsnliveextra" name="NBC Sports Live Extra" version="2018.2.10" provider-name="eracknaphobia">
+<addon id="plugin.video.nbcsnliveextra" name="NBC Sports Live Extra" version="2018.2.13" provider-name="eracknaphobia">
   <requires>
-   <import addon="xbmc.python" version="2.19.0"/>
-   <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="xbmc.python" version="2.19.0"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+    <import addon="script.module.adobepass" version="2017.3.20"/>
+    <import addon="script.module.requests" version="2.9.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="nbcsn.py">
         <provides>video</provides>
@@ -195,9 +197,6 @@
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <forum>http://forum.kodi.tv/showthread.php?tid=207159</forum>
-    <website></website>
-    <email></email>
-    <source></source>
   </extension>
 </addon>
 
@@ -265,7 +264,7 @@
 
 <addon id="plugin.video.simpsonsworld" name="Simpsons World" version="2017.11.28" provider-name="eracknaphobia">
   <requires>
-      <import addon="xbmc.python" version="2.24.0"/>
+      <import addon="xbmc.python" version="2.25.0"/>
       <import addon="script.module.adobepass" version="2017.3.20"/>
       <import addon="script.module.requests" version="2.9.1"/>
   </requires>
