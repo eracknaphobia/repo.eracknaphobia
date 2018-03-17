@@ -261,7 +261,7 @@
 
 <addon id="plugin.video.simpsonsworld" name="Simpsons World" version="2017.11.28" provider-name="eracknaphobia">
   <requires>
-      <import addon="xbmc.python" version="2.25.0"/>
+      <import addon="xbmc.python" version="2.24.0"/>
       <import addon="script.module.adobepass" version="2017.3.20"/>
       <import addon="script.module.requests" version="2.9.1"/>
   </requires>
@@ -300,6 +300,36 @@
     <disclaimer lang="en_GB"></disclaimer>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <source>https://github.com/eracknaphobia/script.module.adobepass</source>
+  </extension>
+</addon>
+
+<addon id="script.psvue.epg" name="PS Vue EPG Play" version="2018.3.17" provider-name="eracknaphobia">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.requests" version="2.9.1"/>
+    <import addon="plugin.video.psvue" version="2018.11.17"/>
+    <import addon="pvr.iptvsimple" version="2.4.14"/>
+    <import addon="service.psvue.epg" version="2018.3.17"/>
+  </requires>
+    <extension point="xbmc.python.script" library="script.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">PS Vue EPG Play</summary>
+  </extension>
+</addon>
+
+<addon id="service.psvue.epg" name="PS Vue EPG Build Service" version="2018.3.17" provider-name="eracknaphobia">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.requests" version="2.9.1"/>
+    <import addon="plugin.video.psvue" version="2018.2.15"/>
+    <import addon="pvr.iptvsimple" version="2.4.14"/>
+    <import addon="script.psvue.epg" version="2018.3.17"/>
+  </requires>
+  <extension point="xbmc.service" library="service.py" start="login" />
+    <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">PS Vue EPG Build Service</summary>
   </extension>
 </addon>
 </addons>
