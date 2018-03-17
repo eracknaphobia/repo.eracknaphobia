@@ -288,6 +288,19 @@
   </extension>
 </addon>
 
+<addon id="repository.eracknaphobia" name="eracknaphobia's Repo" version="1.1.0" provider-name="eracknaphobia">
+	<extension point="xbmc.addon.repository" name="eracknaphobia's Repo">
+		<info compressed="false">https://github.com/eracknaphobia/repo.eracknaphobia/raw/master/addons.xml</info>
+		<checksum>https://github.com/eracknaphobia/repo.eracknaphobia/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://github.com/eracknaphobia/repo.eracknaphobia/raw/master/addons/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>eracknaphobia's Repo</summary>
+		<description>eracknaphobia's Repo</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
 <addon id="script.module.adobepass" name="adobepass" version="2017.3.20" provider-name="eracknaphobia">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
@@ -303,12 +316,11 @@
   </extension>
 </addon>
 
-<addon id="script.psvue.epg" name="PS Vue EPG Play" version="2018.3.17" provider-name="eracknaphobia">
+<addon id="script.module.psvueplay" name="PS Vue EPG Play" version="2018.3.17" provider-name="eracknaphobia">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.requests" version="2.9.1"/>
-    <import addon="plugin.video.psvue" version="2018.11.17"/>
-    <import addon="pvr.iptvsimple" version="2.4.14"/>
+    <import addon="plugin.video.psvue" version="2018.2.15"/>
     <import addon="service.psvue.epg" version="2018.3.17"/>
   </requires>
     <extension point="xbmc.python.script" library="script.py" />
@@ -323,8 +335,7 @@
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.requests" version="2.9.1"/>
     <import addon="plugin.video.psvue" version="2018.2.15"/>
-    <import addon="pvr.iptvsimple" version="2.4.14"/>
-    <import addon="script.psvue.epg" version="2018.3.17"/>
+    <import addon="script.module.psvueplay" version="2018.3.17"/>
   </requires>
   <extension point="xbmc.service" library="service.py" start="login" />
     <extension point="xbmc.addon.metadata">
