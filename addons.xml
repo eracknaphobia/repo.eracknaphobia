@@ -303,7 +303,7 @@
   </extension>
 </addon>
 
-<addon id="service.psvue.epg" name="PS Vue EPG Play" version="2018.3.20" provider-name="eracknaphobia">
+<addon id="script.module.psvueplay" name="PS Vue EPG Play" version="2018.3.20" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.25.0"/>
    <import addon="script.module.requests" version="2.9.1"/>
