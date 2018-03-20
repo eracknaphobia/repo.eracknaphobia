@@ -307,7 +307,7 @@
   <requires>
    <import addon="xbmc.python" version="2.25.0"/>
    <import addon="script.module.requests" version="2.9.1"/>
-   <import addon="plugin.video.psvue" version="2018.11.17"/>
+   <import addon="plugin.video.psvue" version="2018.2.15"/>
   </requires>
     <extension point="xbmc.python.module" library="script.py" />
   <extension point="xbmc.addon.metadata">
