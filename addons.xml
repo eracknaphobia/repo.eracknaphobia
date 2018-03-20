@@ -261,7 +261,7 @@
 
 <addon id="plugin.video.simpsonsworld" name="Simpsons World" version="2017.11.28" provider-name="eracknaphobia">
   <requires>
-      <import addon="xbmc.python" version="2.24.0"/>
+      <import addon="xbmc.python" version="2.25.0"/>
       <import addon="script.module.adobepass" version="2017.3.20"/>
       <import addon="script.module.requests" version="2.9.1"/>
   </requires>
@@ -303,30 +303,49 @@
   </extension>
 </addon>
 
-<addon id="script.module.psvueplay" name="PS Vue EPG Play" version="2018.3.17" provider-name="eracknaphobia">
+<addon id="service.psvue.epg" name="PS Vue EPG Play" version="2018.3.20" provider-name="eracknaphobia">
   <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="script.module.requests" version="2.9.1"/>
-    <import addon="plugin.video.psvue" version="2018.2.15"/>
+   <import addon="xbmc.python" version="2.25.0"/>
+   <import addon="script.module.requests" version="2.9.1"/>
+   <import addon="plugin.video.psvue" version="2018.11.17"/>
   </requires>
-    <extension point="xbmc.python.script" library="script.py" />
+    <extension point="xbmc.python.module" library="script.py" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en_GB">PS Vue EPG Play</summary>
+	<description lang="en_GB">Plays PS Vue streams inbound from Kodi webserver</description>
+    <disclaimer lang="en_GB">Requires a valid subscription to the PS Vue service</disclaimer>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
   </extension>
 </addon>
 
-<addon id="service.psvue.epg" name="PS Vue EPG Build Service" version="2018.3.17" provider-name="eracknaphobia">
+<addon id="service.psvue.epg" name="PS Vue EPG Play" version="2018.3.16" provider-name="eracknaphobia">
+  <requires>
+   <import addon="xbmc.python" version="2.25.0"/>
+   <import addon="script.module.requests" version="2.9.1"/>
+   <import addon="plugin.video.psvue" version="2018.11.17"/>
+  </requires>
+    <extension point="xbmc.python.module" library="script.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">PS Vue EPG Play</summary>
+	<description lang="en_GB">Plays PS Vue streams inbound from webserver</description>
+    <disclaimer lang="en_GB">Requires a valid subscription to the PS Vue service</disclaimer>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
+</addon>
+
+<addon id="service.psvue.epg" name="PS Vue EPG Build Service" version="2018.3.20" provider-name="eracknaphobia">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.requests" version="2.9.1"/>
     <import addon="plugin.video.psvue" version="2018.2.15"/>
-    <import addon="script.module.psvueplay" version="2018.3.17"/>
+    <import addon="script.module.psvueplay" version="2018.3.20"/>
   </requires>
-  <extension point="xbmc.service" library="service.py" start="login" />
-    <extension point="xbmc.addon.metadata">
+   <extension point="xbmc.service" library="service.py" start="login" />
+  <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en_GB">PS Vue EPG Build Service</summary>
+    <summary lang="en">PS Vue EPG Build Service</summary>
   </extension>
 </addon>
 </addons>
