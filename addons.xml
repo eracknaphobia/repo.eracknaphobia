@@ -319,22 +319,6 @@
   </extension>
 </addon>
 
-<addon id="service.psvue.epg" name="PS Vue EPG Play" version="2018.3.16" provider-name="eracknaphobia">
-  <requires>
-   <import addon="xbmc.python" version="2.25.0"/>
-   <import addon="script.module.requests" version="2.9.1"/>
-   <import addon="plugin.video.psvue" version="2018.11.17"/>
-  </requires>
-    <extension point="xbmc.python.module" library="script.py" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en_GB">PS Vue EPG Play</summary>
-	<description lang="en_GB">Plays PS Vue streams inbound from webserver</description>
-    <disclaimer lang="en_GB">Requires a valid subscription to the PS Vue service</disclaimer>
-	<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-  </extension>
-</addon>
-
 <addon id="service.psvue.epg" name="PS Vue EPG Build Service" version="2018.3.20" provider-name="eracknaphobia">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
