@@ -303,13 +303,28 @@
   </extension>
 </addon>
 
-<addon id="script.module.psvueplay" name="PS Vue EPG Play" version="2018.3.20" provider-name="eracknaphobia">
+<addon id="script.module.psvue" name="PS Vue Module" version="2018.3.21" provider-name="eracknaphobia">
+  <requires>
+   <import addon="xbmc.python" version="2.25.0"/>
+   <import addon="script.module.requests" version="2.9.1"/>
+  </requires>
+    <extension point="xbmc.module" library="script.py" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en_GB">PS Vue Module</summary>
+	  <description lang="en_GB">Handles</description>
+    <disclaimer lang="en_GB">Performs back end PS Vue service calls</disclaimer>
+	<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+  </extension>
+</addon>
+
+<addon id="script.psvue.play" name="PS Vue EPG Play" version="2018.3.20" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.25.0"/>
    <import addon="script.module.requests" version="2.9.1"/>
    <import addon="plugin.video.psvue" version="2018.2.15"/>
   </requires>
-    <extension point="xbmc.python.module" library="script.py" />
+    <extension point="xbmc.python.script" library="script.py" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en_GB">PS Vue EPG Play</summary>
@@ -319,12 +334,12 @@
   </extension>
 </addon>
 
-<addon id="service.psvue.epg" name="PS Vue EPG Build Service" version="2018.3.20" provider-name="eracknaphobia">
+<addon id="service.psvue.epg" name="PS Vue EPG Build Service" version="2018.3.21" provider-name="eracknaphobia">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.requests" version="2.9.1"/>
     <import addon="plugin.video.psvue" version="2018.2.15"/>
-    <import addon="script.module.psvueplay" version="2018.3.20"/>
+    <import addon="script.psvue.play" version="2018.3.20"/>
   </requires>
    <extension point="xbmc.service" library="service.py" start="login" />
   <extension point="xbmc.addon.metadata">
