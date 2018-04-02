@@ -124,7 +124,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2018.3.13" provider-name="eracknaphobia">
+<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2018.4.2" provider-name="eracknaphobia">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.pytz" version="2014.2" />
@@ -301,6 +301,27 @@
   </extension>
 </addon>
 
+<addon id="script.module.cherrypy"
+       name="CherryPy Kodi module"
+       version="11.0.1"
+       provider-name="marcelveldt, CherryPy Team">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="script.module.six" version="1.9.0"/>
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary>CherryPy webserver packaged as Kodi module</summary>
+        <description>CherryPy is a pythonic, object-oriented web framework
+            CherryPy allows developers to build web applications in much the same way they would build any other object-oriented Python program. This results in smaller source code developed in less time.
+            CherryPy is now more than ten years old and it is has proven to be very fast and stable. It is being used in production by many sites, from the simplest to the most demanding.
+        </description>
+        <license>BSD</license>
+        <source>https://github.com/marcelveldt/script.module.cherrypy</source>
+        <platform>all</platform>
+    </extension>
+</addon>
+
 <addon id="script.psvue.play" name="PS Vue EPG Play" version="2018.3.20" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.25.0"/>
@@ -323,7 +344,7 @@
     <import addon="script.module.requests" version="2.9.1"/>
     <import addon="plugin.video.psvue" version="2018.2.15"/>
   </requires>
-   <extension point="xbmc.service" library="service.py" start="login" />
+   <extension point="xbmc.service" library="service.py" start="startup" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
     <summary lang="en">PS Vue EPG Build Service</summary>
