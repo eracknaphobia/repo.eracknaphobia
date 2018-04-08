@@ -301,7 +301,7 @@
   </extension>
 </addon>
 
-<addon id="service.psvue.epg" name="PS Vue EPG Build Service" version="2018.4.7" provider-name="eracknaphobia">
+<addon id="service.psvue.epg" name="PS Vue EPG Build Service" version="2018.4.7.1" provider-name="eracknaphobia">
   <requires>
     <import addon="plugin.video.psvue" version="2018.2.15"/>
     <import addon="script.module.requests" version="2.9.1"/>
@@ -313,7 +313,7 @@
     <platform>all</platform>
     <summary lang="en">PS Vue EPG Build Service</summary>
     <news>
-- Redirect to actual stream to reserve epg info on-screen
+- Bug fixes
     </news>
   </extension>
 </addon>
