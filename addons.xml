@@ -300,11 +300,10 @@
   </extension>
 </addon>
 
-<addon id="service.psvue.epg" name="PS Vue EPG Build Service" version="2018.4.7.1" provider-name="eracknaphobia">
+<addon id="service.psvue.epg" name="PS Vue EPG Build Service" version="2018.4.18" provider-name="eracknaphobia">
   <requires>
     <import addon="plugin.video.psvue" version="2018.2.15"/>
     <import addon="script.module.requests" version="2.9.1"/>
-    <import addon="script.module.m3u8" version="0.2.10"/>
     <import addon="xbmc.python" version="2.25.0"/>
   </requires>
    <extension point="xbmc.service" library="service.py" start="startup" />
