@@ -124,7 +124,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2018.5.29" provider-name="eracknaphobia">
+<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2018.6.7" provider-name="eracknaphobia">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.pytz" version="2014.2" />
@@ -140,8 +140,10 @@
     <description lang="en_GB">Watch every out-of-market regular season game in the office or on the go. The #1 LIVE Streaming Sports Service</description>
     <disclaimer lang="en_GB"></disclaimer>
     <news>
-        - Force Stream order in select popup (highlights, home, away)
-        - Fix bug that wouldn't allow exit of stream select popup
+        - Add support for inputstream adaptive
+        - Fix for 60fps streams not available
+        - Move settings ID's to proper 30K range
+        - Add warning message when inputstream adaptive and always ask are both enabled
     </news>
     <language>en</language>
     <platform>all</platform>
