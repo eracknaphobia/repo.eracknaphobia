@@ -228,7 +228,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.psvue" name="PS Vue" version="2018.7.13" provider-name="eracknaphobia">
+<addon id="plugin.video.psvue" name="PS Vue" version="2018.9.7" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.25.0"/>
    <import addon="script.module.requests" version="2.9.1"/>
@@ -243,6 +243,8 @@
     <disclaimer lang="en_GB">Requires a valid subscription to PS Vue which is currently only available in the US</disclaimer>
     <news>
         - Fix Export Date Bug
+        - Rename My Shows to My DVR
+        - Added Movies section
     </news>
     <language>en</language>
     <platform>all</platform>
