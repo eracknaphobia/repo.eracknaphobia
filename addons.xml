@@ -177,7 +177,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.psvue" name="PS Vue" version="2018.9.20" provider-name="eracknaphobia">
+<addon id="plugin.video.psvue" name="PS Vue" version="2018.9.21" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.25.0"/>
    <import addon="script.module.requests" version="2.9.1"/>
@@ -191,12 +191,7 @@
     <description lang="en_GB">PlayStation™Vue is a TV service that streams live TV, movies, and sports on a variety of your favorite devices without a cable or satellite subscription.  With powerful features that allow you to save thousands of hours of your favorite shows without recording conflicts, and Premium channels that can be purchased individually or with a multi-channel plan, TV has never been the same. No annual contracts, no conflicts, no problems.</description>
     <disclaimer lang="en_GB">Requires a valid subscription to PS Vue which is currently only available in the US</disclaimer>
     <news>
-        - Add EPG reset mode, which is callable from PS EPG Service
-        - Only set resume time when necessary
-        - Add next and previous page to Movies section
-        - Add Playback settings to enable/disable inputstream adaptive for ps vue
-        - Add Playback setting to enable/disable using alternate stream url
-        - Add Trending Live section
+        - Add ability to change movie genre
     </news>
     <language>en</language>
     <platform>all</platform>
@@ -255,7 +250,7 @@
   </extension>
 </addon>
 
-<addon id="service.psvue.epg" name="PS Vue EPG Build Service" version="2018.9.18" provider-name="eracknaphobia">
+<addon id="service.psvue.epg" name="PS Vue EPG Build Service" version="2018.9.21" provider-name="eracknaphobia">
   <requires>
     <import addon="plugin.video.psvue" version="2018.2.15"/>
     <import addon="script.module.requests" version="2.9.1"/>
