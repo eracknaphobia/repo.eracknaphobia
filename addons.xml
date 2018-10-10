@@ -177,7 +177,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.psvue" name="PS Vue" version="2018.9.21" provider-name="eracknaphobia">
+<addon id="plugin.video.psvue" name="PS Vue" version="2018.10.9" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.25.0"/>
    <import addon="script.module.requests" version="2.9.1"/>
@@ -191,7 +191,7 @@
     <description lang="en_GB">PlayStation™Vue is a TV service that streams live TV, movies, and sports on a variety of your favorite devices without a cable or satellite subscription.  With powerful features that allow you to save thousands of hours of your favorite shows without recording conflicts, and Premium channels that can be purchased individually or with a multi-channel plan, TV has never been the same. No annual contracts, no conflicts, no problems.</description>
     <disclaimer lang="en_GB">Requires a valid subscription to PS Vue which is currently only available in the US</disclaimer>
     <news>
-        - Add ability to change movie genre
+        - Reworked badges for show/episode listings (thanks hackthis02)
     </news>
     <language>en</language>
     <platform>all</platform>
@@ -205,7 +205,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.simpsonsworld" name="Simpsons World" version="2017.11.28" provider-name="eracknaphobia">
+<addon id="plugin.video.simpsonsworld" name="Simpsons World" version="2018.10.10" provider-name="eracknaphobia">
   <requires>
       <import addon="xbmc.python" version="2.25.0"/>
       <import addon="script.module.adobepass" version="2017.3.20"/>
@@ -220,7 +220,9 @@
     <description lang="en_GB">Simpsons World has every episode of the series accessible to authenticated FX subscribers</description>
     <disclaimer lang="en_GB"></disclaimer>
     <news>
-- Fixed Invalid XML issue
+        - Fix for updated adobepass
+        - Add Season 30
+        - PEP 8 Code Styling
     </news>
     <language>en</language>
     <platform>all</platform>
@@ -234,7 +236,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.adobepass" name="adobepass" version="2018.9.29" provider-name="eracknaphobia">
+<addon id="script.module.adobepass" name="adobepass" version="2018.10.8" provider-name="eracknaphobia">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.requests" version="2.9.1"/>
