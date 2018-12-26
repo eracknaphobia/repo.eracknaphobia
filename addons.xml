@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.crackle" name="Crackle" version="2018.1.27" provider-name="eracknaphobia">
+<addon id="plugin.video.crackle" name="Crackle" version="2018.12.17" provider-name="eracknaphobia">
   <requires>
       <import addon="xbmc.python" version="2.25.0"/>
       <import addon="script.module.requests" version="2.9.1"/>
@@ -171,8 +171,7 @@
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <forum>http://forum.kodi.tv/showthread.php?tid=243756</forum>
-    <website></website>
-    <email></email>
+    <website>http://www.nhl.tv</website>
     <source>https://github.com/eracknaphobia/plugin.video.nhlgcl</source>
   </extension>
 </addon>
