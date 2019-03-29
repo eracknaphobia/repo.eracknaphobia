@@ -14,8 +14,7 @@
     <description lang="en_GB">Crackle is a video streaming distributor of original web shows, Hollywood movies, and TV shows. Founded in the early 2000s as Grouper, and rebranded in 2007, Crackle is owned by Sony Pictures Entertainment.</description>
     <disclaimer lang="en_GB"></disclaimer>
       <news>
-        - Added support for inputstream adaptive
-        - Code clean up
+        - Fix for upstream changes
       </news>
     <language>en</language>
     <platform>all</platform>
@@ -101,10 +100,11 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.mmlive" name="March Madness Live" version="2017.3.18" provider-name="eracknaphobia">
+<addon id="plugin.video.mmlive" name="March Madness Live" version="2019.3.28" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.14.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
+   <import addon="script.module.requests" version="2.9.1"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
@@ -148,13 +148,14 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.nhlgcl" name="NHL TV™" version="2018.4.19" provider-name="eracknaphobia">
+<addon id="plugin.video.nhlgcl" name="NHL TV™" version="2018.10.16" provider-name="eracknaphobia">
   <requires>
    <import addon="xbmc.python" version="2.24.0"/>
    <import addon="script.module.pytz" version="2014.2" />
    <import addon="script.module.beautifulsoup4" version="4.3.1" />
    <import addon="script.module.pil" version="1.1.7" />
    <import addon="script.module.requests" version="2.9.1"/>
+
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
         <provides>video</provides>
@@ -165,7 +166,7 @@
     <description lang="en">With NHL.TV you can access revolutionary 60fps (frames per second) video through Kodi</description>
     <disclaimer lang="en"></disclaimer>
     <news>
-- Add support for inputstream adaptive
+- Testings play from beginning
     </news>
     <language>en</language>
     <platform>all</platform>
@@ -204,7 +205,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.simpsonsworld" name="Simpsons World" version="2019.1.16" provider-name="eracknaphobia">
+<addon id="plugin.video.simpsonsworld" name="Simpsons World" version="2019.2.22" provider-name="eracknaphobia">
   <requires>
       <import addon="xbmc.python" version="2.25.0"/>
       <import addon="script.module.adobepass" version="2017.3.20"/>
@@ -219,9 +220,7 @@
     <description lang="en_GB">Simpsons World has every episode of the series accessible to authenticated FX subscribers</description>
     <disclaimer lang="en_GB"></disclaimer>
     <news>
-        - Add Random Episode Listitem (thanks hackthis02)
-        - PEP 8 Code Styling
-        - Support for Inputstream Adaptive (toggle in settings)
+        - Skip season 29 in random episode to avoid error
     </news>
     <language>en</language>
     <platform>all</platform>
