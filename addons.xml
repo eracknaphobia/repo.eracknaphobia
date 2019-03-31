@@ -72,7 +72,7 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2018.8.16" provider-name="eracknaphobia">
+<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2019.3.31" provider-name="eracknaphobia">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.pytz" version="2014.2" />
@@ -102,7 +102,7 @@
 
 <addon id="plugin.video.mmlive" name="March Madness Live" version="2019.3.28" provider-name="eracknaphobia">
   <requires>
-   <import addon="xbmc.python" version="2.14.0"/>
+   <import addon="xbmc.python" version="2.25.0"/>
    <import addon="script.module.simplejson" version="3.3.0"/>
    <import addon="script.module.requests" version="2.9.1"/>
   </requires>
@@ -112,16 +112,16 @@
 
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en"></summary>
-    <description lang="en">The National Collegiate Athletic Association (NCAA) Men's Division I Basketball Tournament is a single-elimination tournament played each spring in the United States, currently featuring 68 college basketball teams, to determine the national championship of the major college basketball teams.</description>
-    <disclaimer lang="en"></disclaimer>
+    <summary lang="en_GB"></summary>
+    <description lang="en_GB">The National Collegiate Athletic Association (NCAA) Men's Division I Basketball Tournament is a single-elimination tournament played each spring in the United States, currently featuring 68 college basketball teams, to determine the national championship of the major college basketball teams.</description>
+    <disclaimer lang="en_GB"></disclaimer>
     <language>en</language>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
     <forum>http://forum.kodi.tv/showthread.php?tid=264888</forum>
     <website></website>
     <email></email>
-    <source></source>
+    <source>https://github.com/eracknaphobia/plugin.video.mmlive/tree/krypton</source>
   </extension>
 </addon>
 
