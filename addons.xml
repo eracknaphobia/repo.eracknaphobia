@@ -72,57 +72,70 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2018.8.16" provider-name="eracknaphobia">
-  <requires>
-    <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="script.module.pytz" version="2014.2" />
-    <import addon="script.module.beautifulsoup4" version="4.3.1" />
-    <import addon="script.module.requests" version="2.9.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="main.py">
+<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2019.3.31" provider-name="eracknaphobia">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.pytz" version="2014.2"/>
+        <import addon="script.module.beautifulsoup4" version="4.3.1"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+        <import addon="inputstream.adaptive" version="2.0.10" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en_GB">Watch every out-of-market regular season game in the office or on the go. The #1 LIVE Streaming Sports Service</summary>
-    <description lang="en_GB">Watch every out-of-market regular season game in the office or on the go. The #1 LIVE Streaming Sports Service</description>
-    <disclaimer lang="en_GB"></disclaimer>
-    <news>
-        - Add ability to toggle catch up mode
-    </news>
-    <language>en</language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source>https://github.com/eracknaphobia/plugin.video.mlbtv</source>
-  </extension>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Watch live and archived games
+        </summary>
+        <description lang="en_GB">Watch every out-of-market regular season game in the office or on the go. The #1 LIVE
+            Streaming Sports Service
+        </description>
+        <disclaimer lang="en_GB">Requires an MLB.tv account</disclaimer>
+        <news>
+            - Fixed Login for 2019 season
+        </news>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=262745</forum>
+        <website>https://www.mlb.com/live-stream-games</website>
+        <source>https://github.com/eracknaphobia/plugin.video.mlbtv</source>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="plugin.video.mmlive" name="March Madness Live" version="2019.3.28" provider-name="eracknaphobia">
-  <requires>
-   <import addon="xbmc.python" version="2.14.0"/>
-   <import addon="script.module.simplejson" version="3.3.0"/>
-   <import addon="script.module.requests" version="2.9.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="main.py">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+        <import addon="inputstream.adaptive" version="2.0.10" optional="true"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
-  </extension>
+    </extension>
 
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en"></summary>
-    <description lang="en">The National Collegiate Athletic Association (NCAA) Men's Division I Basketball Tournament is a single-elimination tournament played each spring in the United States, currently featuring 68 college basketball teams, to determine the national championship of the major college basketball teams.</description>
-    <disclaimer lang="en"></disclaimer>
-    <language>en</language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum>http://forum.kodi.tv/showthread.php?tid=264888</forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">Lets you stream all the March Madness games live.</summary>
+        <description lang="en_GB">The National Collegiate Athletic Association (NCAA) Men's Division I Basketball
+            Tournament is a single-elimination tournament played each spring in the United States, currently featuring
+            68 college basketball teams, to determine the national championship of the major college basketball teams.
+        </description>
+        <disclaimer lang="en_GB">Requires a valid US cable / satellite subscription</disclaimer>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=264888</forum>
+        <source>https://github.com/eracknaphobia/plugin.video.mmlive</source>
+        <website>https://www.ncaa.com/march-madness-live/watch</website>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="plugin.video.nbcsnliveextra" name="NBC Sports Live Extra" version="2019.3.15" provider-name="eracknaphobia">
@@ -140,7 +153,6 @@
     <platform>all</platform>
     <summary lang="en">Watch NBCSN Live Extra</summary>
     <description lang="en">NBC Sports Live Extra is a service that allows you to watch NBC Sports coverage of live events from NBC and NBCSports Network</description>
-    <disclaimer lang="en"></disclaimer>
     <language>en</language>
     <platform>all</platform>
     <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
@@ -177,32 +189,35 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.psvue" name="PS Vue" version="2018.10.9" provider-name="eracknaphobia">
-  <requires>
-   <import addon="xbmc.python" version="2.25.0"/>
-   <import addon="script.module.requests" version="2.9.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="main.py">
+<addon id="plugin.video.psvue" name="PS Vue" version="2019.5.29" provider-name="eracknaphobia">
+    <requires>
+        <import addon="xbmc.python" version="2.25.0"/>
+        <import addon="script.module.requests" version="2.9.1"/>
+        <import addon="script.module.simplecache" version="1.0.11" />
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en_GB">PS Vue</summary>
-    <description lang="en_GB">PlayStation™Vue is a TV service that streams live TV, movies, and sports on a variety of your favorite devices without a cable or satellite subscription.  With powerful features that allow you to save thousands of hours of your favorite shows without recording conflicts, and Premium channels that can be purchased individually or with a multi-channel plan, TV has never been the same. No annual contracts, no conflicts, no problems.</description>
-    <disclaimer lang="en_GB">Requires a valid subscription to PS Vue which is currently only available in the US</disclaimer>
-    <news>
-        - Reworked badges for show/episode listings (thanks hackthis02)
-    </news>
-    <language>en</language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum>http://forum.kodi.tv/showthread.php?tid=312858</forum>
-    <source>https://github.com/eracknaphobia/plugin.video.psvue</source>
-    <assets>
-      <icon>resources/icon.png</icon>
-      <fanart>resources/fanart.jpg</fanart>
-    </assets>
-  </extension>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en_GB">PS Vue</summary>
+        <description lang="en_GB">PlayStation™Vue is a TV service that streams live TV, movies, and sports on a variety of your favorite devices without a cable or satellite subscription.  With powerful features that allow you to save thousands of hours of your favorite shows without recording conflicts, and Premium channels that can be purchased individually or with a multi-channel plan, TV has never been the same. No annual contracts, no conflicts, no problems.</description>
+        <disclaimer lang="en_GB">Requires a valid subscription to PS Vue which is currently only available in the US</disclaimer>
+        <news>
+            - Add DVR or VOD selection (thanks Snoopyjoe and hackthis02)
+            - Library bug fix
+        </news>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <forum>http://forum.kodi.tv/showthread.php?tid=312858</forum>
+        <source>https://github.com/eracknaphobia/plugin.video.psvue</source>
+        <website>https://www.playstation.com/en-us/network/vue/</website>
+        <assets>
+            <icon>resources/icon.png</icon>
+            <fanart>resources/fanart.jpg</fanart>
+        </assets>
+    </extension>
 </addon>
 
 <addon id="plugin.video.simpsonsworld" name="Simpsons World" version="2019.2.22" provider-name="eracknaphobia">
