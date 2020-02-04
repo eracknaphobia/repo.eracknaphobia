@@ -12,7 +12,6 @@
     <platform>all</platform>
     <summary lang="en_GB">Crackle delivers popular, award-winning TV, movies and originals. With no limit to how much you can watch across all your devices, you can binge all you want, wherever you want.</summary>
     <description lang="en_GB">Crackle is a video streaming distributor of original web shows, Hollywood movies, and TV shows. Founded in the early 2000s as Grouper, and rebranded in 2007, Crackle is owned by Sony Pictures Entertainment.</description>
-    <disclaimer lang="en_GB"></disclaimer>
       <news>
         Thanks to Sreekanth for the following updates
         - set mediatype for movies, tvshows and episodes appropriately
@@ -170,35 +169,37 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.nhlgcl" name="NHL TV™" version="2019.10.3" provider-name="eracknaphobia">
-  <requires>
-   <import addon="xbmc.python" version="2.24.0"/>
-   <import addon="script.module.pytz" version="2014.2" />
-   <import addon="script.module.beautifulsoup4" version="4.3.1" />
-   <import addon="script.module.pil" version="1.1.7" />
-   <import addon="script.module.requests" version="2.9.1"/>
+<addon id="plugin.video.nhlgcl" name="NHL TV™" version="2020.2.4" provider-name="eracknaphobia">
+    <requires>
+        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="script.module.pytz" version="2014.2"/>
+        <import addon="script.module.beautifulsoup4" version="4.3.1"/>
+        <import addon="script.module.pil" version="1.1.7"/>
+        <import addon="script.module.requests" version="2.9.1"/>
 
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="addon.py">
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="addon.py">
         <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">Watch out-of-market games from around the League on Kodi, with HD quality streaming</summary>
-    <description lang="en">With NHL.TV you can access revolutionary 60fps (frames per second) video through Kodi</description>
-    <disclaimer lang="en"></disclaimer>
-    <news>
-        - Code clean up
-        - Fix error when user cancel stream select
-        - Remove listitem colors
-    </news>
-    <language>en</language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum>http://forum.kodi.tv/showthread.php?tid=243756</forum>
-    <website>http://www.nhl.tv</website>
-    <source>https://github.com/eracknaphobia/plugin.video.nhlgcl</source>
-  </extension>
+    </extension>
+    <extension point="xbmc.service" library="service.py" start="startup"/>
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Watch out-of-market games from around the League on Kodi, with HD quality streaming</summary>
+        <description lang="en">With NHL.TV you can access revolutionary 60fps (frames per second) video through Kodi
+        </description>
+        <disclaimer lang="en">Requires a valid NHL TV account to view full Live and Archived games. Blackout and other
+            restrictions apply, including national blackouts.
+        </disclaimer>
+        <news>
+            - Fixing favorite team's game (thanks Str8AWay)
+        </news>
+        <language>en</language>
+        <platform>all</platform>
+        <license>GPL-2.0-or-later</license>
+        <forum>https://forum.kodi.tv/showthread.php?tid=243756</forum>
+        <website>https://www.nhl.com/subscribe</website>
+        <source>https://github.com/eracknaphobia/plugin.video.nhlgcl</source>
+    </extension>
 </addon>
 
 
@@ -226,7 +227,7 @@
         <language>en</language>
         <platform>all</platform>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <forum>http://forum.kodi.tv/showthread.php?tid=312858</forum>
+        <forum>https://forum.kodi.tv/showthread.php?tid=312858</forum>
         <source>https://github.com/eracknaphobia/plugin.video.psvue</source>
         <website>https://www.playstation.com/en-us/network/vue/</website>
         <assets>
