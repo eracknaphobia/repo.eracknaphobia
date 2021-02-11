@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="plugin.video.crackle" name="Crackle" version="2020.7.13" provider-name="eracknaphobia">
+<addon id="plugin.video.crackle" name="Crackle" version="2020.10.7" provider-name="eracknaphobia">
   <requires>
       <import addon="xbmc.python" version="2.25.0"/>
-      <import addon="script.module.requests" version="2.9.1"/>
-      <import addon="script.module.inputstreamhelper" version="0.3.3"/>
+      <import addon="script.module.requests"/>
+      <import addon="script.module.inputstreamhelper"/>
       <import addon="script.module.kodi-six" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="main.py">
@@ -15,13 +15,11 @@
     <summary lang="en_GB">Crackle delivers popular, award-winning TV, movies and originals. With no limit to how much you can watch across all your devices, you can binge all you want, wherever you want.</summary>
     <description lang="en_GB">Crackle is a video streaming distributor of original web shows, Hollywood movies, and TV shows. Founded in the early 2000s as Grouper, and rebranded in 2007, Crackle is owned by Sony Pictures Entertainment.</description>
       <news>
-        - Update code for Python3
-        - Improve Sorting of list items (thanks ssreekanth)
-        - Add DRM playback support
+        - Sort tv shows by episode
       </news>
     <language>en</language>
     <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <license>GPL-2.0-or-later</license>
     <forum></forum>
     <source>https://github.com/eracknaphobia/plugin.video.crackle</source>
     <assets>
@@ -79,13 +77,14 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2019.3.31" provider-name="eracknaphobia">
+<addon id="plugin.video.mlbtv" name="MLB.TV®" version="2020.10.8" provider-name="eracknaphobia">
     <requires>
         <import addon="xbmc.python" version="2.25.0"/>
-        <import addon="script.module.pytz" version="2014.2"/>
-        <import addon="script.module.beautifulsoup4" version="4.3.1"/>
-        <import addon="script.module.requests" version="2.9.1"/>
-        <import addon="inputstream.adaptive" version="2.0.10" optional="true"/>
+        <import addon="script.module.pytz" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.requests" />
+        <import addon="inputstream.adaptive" optional="true"/>
+        <import addon="script.module.kodi-six" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="main.py">
         <provides>video</provides>
@@ -99,11 +98,12 @@
         </description>
         <disclaimer lang="en_GB">Requires an MLB.tv account</disclaimer>
         <news>
-            - Fixed Login for 2019 season
+            - Matrix compatibility updates
+            - Code clean up
         </news>
         <language>en</language>
         <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+        <license>GPL-2.0-or-later</license>
         <forum>https://forum.kodi.tv/showthread.php?tid=262745</forum>
         <website>https://www.mlb.com/live-stream-games</website>
         <source>https://github.com/eracknaphobia/plugin.video.mlbtv</source>
@@ -145,12 +145,12 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.nbcsnliveextra" name="NBC Sports Live Extra" version="2019.3.15" provider-name="eracknaphobia">
+<addon id="plugin.video.nbcsnliveextra" name="NBC Sports Live Extra" version="2020.11.6" provider-name="eracknaphobia">
   <requires>
     <import addon="xbmc.python" version="2.19.0"/>
-    <import addon="script.module.simplejson" version="3.3.0"/>
-    <import addon="script.module.adobepass" version="2017.3.20"/>
-    <import addon="script.module.requests" version="2.9.1"/>
+    <import addon="script.module.adobepass" />
+    <import addon="script.module.requests" />
+    <import addon="script.module.kodi-six" />
   </requires>
   <extension point="xbmc.python.pluginsource" library="nbcsn.py">
         <provides>video</provides>
@@ -158,38 +158,46 @@
 
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en">Watch NBCSN Live Extra</summary>
-    <description lang="en">NBC Sports Live Extra is a service that allows you to watch NBC Sports coverage of live events from NBC and NBCSports Network</description>
+    <summary lang="en_GB">Watch NBCSN Live Extra</summary>
+    <description lang="en_GB">NBC Sports Live Extra is a service that allows you to watch NBC Sports coverage of live events from NBC and NBCSports Network</description>
+    <news>
+        - Updates for python 3 compatibility
+    </news>
     <language>en</language>
     <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <license>GPL-2.0-or-later</license>
     <forum>http://forum.kodi.tv/showthread.php?tid=207159</forum>
+    <assets>
+        <icon>icon.png</icon>
+        <fanart>fanart.jpg</fanart>
+    </assets>
   </extension>
 </addon>
 
-<addon id="plugin.video.nhlgcl" name="NHL TV™" version="2020.2.4" provider-name="eracknaphobia">
+<addon id="plugin.video.nhlgcl" name="NHL TV™" version="2021.2.11" provider-name="eracknaphobia">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
-        <import addon="script.module.pytz" version="2014.2"/>
-        <import addon="script.module.beautifulsoup4" version="4.3.1"/>
-        <import addon="script.module.pil" version="1.1.7"/>
-        <import addon="script.module.requests" version="2.9.1"/>
-
+        <import addon="script.module.pytz" />
+        <import addon="script.module.beautifulsoup4" />
+        <import addon="script.module.pil" />
+        <import addon="script.module.requests" />
+        <import addon="script.module.kodi-six" />
     </requires>
     <extension point="xbmc.python.pluginsource" library="addon.py">
         <provides>video</provides>
     </extension>
-    <extension point="xbmc.service" library="service.py" start="startup"/>
     <extension point="xbmc.addon.metadata">
         <platform>all</platform>
-        <summary lang="en">Watch out-of-market games from around the League on Kodi, with HD quality streaming</summary>
-        <description lang="en">With NHL.TV you can access revolutionary 60fps (frames per second) video through Kodi
+        <summary lang="en_GB">Watch out-of-market games from around the League on Kodi, with HD quality streaming</summary>
+        <description lang="en_GB">With NHL.TV you can access revolutionary 60fps (frames per second) video through Kodi
         </description>
-        <disclaimer lang="en">Requires a valid NHL TV account to view full Live and Archived games. Blackout and other
+        <disclaimer lang="en_GB">Requires a valid NHL TV account to view full Live and Archived games. Blackout and other
             restrictions apply, including national blackouts.
         </disclaimer>
         <news>
-            - Fixing favorite team's game (thanks Str8AWay)
+            - Add dates to fav team recent games (thanks mrawji)
+            - Show starting times beside games (mrawji)
+            - Improve start from beginning feature (mrawji)
         </news>
         <language>en</language>
         <platform>all</platform>
@@ -197,105 +205,29 @@
         <forum>https://forum.kodi.tv/showthread.php?tid=243756</forum>
         <website>https://www.nhl.com/subscribe</website>
         <source>https://github.com/eracknaphobia/plugin.video.nhlgcl</source>
-    </extension>
-</addon>
-
-
-<addon id="plugin.video.psvue" name="PS Vue" version="2019.10.3" provider-name="eracknaphobia">
-    <requires>
-        <import addon="xbmc.python" version="2.25.0"/>
-        <import addon="script.module.requests" version="2.9.1"/>
-        <import addon="script.module.simplecache" version="1.0.11" />
-        <import addon="xbmc.python" version="2.25.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="main.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.service" library="service.py" start="startup" />
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <summary lang="en_GB">PS Vue</summary>
-        <description lang="en_GB">PlayStation™Vue is a TV service that streams live TV, movies, and sports on a variety of your favorite devices without a cable or satellite subscription.  With powerful features that allow you to save thousands of hours of your favorite shows without recording conflicts, and Premium channels that can be purchased individually or with a multi-channel plan, TV has never been the same. No annual contracts, no conflicts, no problems.</description>
-        <disclaimer lang="en_GB">Requires a valid subscription to PS Vue which is currently only available in the US</disclaimer>
-        <news>
-            - Add EPG disable button
-            - Clean up merged code
-            - DVR resumetime default
-        </news>
-        <language>en</language>
-        <platform>all</platform>
-        <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-        <forum>https://forum.kodi.tv/showthread.php?tid=312858</forum>
-        <source>https://github.com/eracknaphobia/plugin.video.psvue</source>
-        <website>https://www.playstation.com/en-us/network/vue/</website>
         <assets>
-            <icon>resources/icon.png</icon>
-            <fanart>resources/fanart.jpg</fanart>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
         </assets>
     </extension>
 </addon>
 
-<addon id="plugin.video.simpsonsworld" name="Simpsons World" version="2019.2.22" provider-name="eracknaphobia">
-  <requires>
-      <import addon="xbmc.python" version="2.25.0"/>
-      <import addon="script.module.adobepass" version="2017.3.20"/>
-      <import addon="script.module.requests" version="2.9.1"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="simpsons.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en_GB">Simpsons World</summary>
-    <description lang="en_GB">Simpsons World has every episode of the series accessible to authenticated FX subscribers</description>
-    <disclaimer lang="en_GB"></disclaimer>
-    <news>
-        - Skip season 29 in random episode to avoid error
-    </news>
-    <language>en</language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum>http://forum.kodi.tv/showthread.php?tid=310272</forum>
-    <source>https://github.com/eracknaphobia/plugin.video.simpsonsworld</source>
-    <assets>
-      <icon>resources/icon.png</icon>
-      <fanart>resources/fanart.jpg</fanart>
-      <screenshot>resources/screencap1.png</screenshot>
-      <screenshot>resources/screencap2.png</screenshot>
-      <screenshot>resources/screencap3.png</screenshot>
-    </assets>
-  </extension>
-</addon>
-
-<addon id="script.module.adobepass" name="adobepass" version="2018.10.8" provider-name="eracknaphobia">
+<addon id="script.module.adobepass" name="adobepass" version="2020.11.6" provider-name="eracknaphobia">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
-    <import addon="script.module.requests" version="2.9.1"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.kodi-six" />
   </requires>
   <extension point="xbmc.python.module" library="lib" />
   <extension point="xbmc.addon.metadata">
     <platform>all</platform>
-    <summary lang="en_GB">Simplify authentication to services that use adobe pass</summary>
-    <description lang="en_GB">Simplify Logins authentication services that use adobe pass</description>
-    <disclaimer lang="en_GB"></disclaimer>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <summary lang="en_GB">Simplify authentication to services that use adobe primetime (formely adobe pass)</summary>
+    <description lang="en_GB">Simplify Logins authentication services that use adobe primetime (formely adobe pass)</description>
+    <license>GPL-2.0-or-later</license>
     <source>https://github.com/eracknaphobia/script.module.adobepass</source>
-  </extension>
-</addon>
-
-<addon id="service.psvue.epg" name="PS Vue EPG Build Service" version="2018.9.21" provider-name="eracknaphobia">
-  <requires>
-    <import addon="plugin.video.psvue" version="2018.2.15"/>
-    <import addon="script.module.requests" version="2.9.1"/>
-    <import addon="xbmc.python" version="2.25.0"/>
-  </requires>
-   <extension point="xbmc.service" library="service.py" start="startup" />
-  <extension point="xbmc.addon.metadata">
-    <platform>all</platform>
-    <summary lang="en">PS Vue EPG Build Service</summary>
-    <news>
-- Bug fixes
-    </news>
+    <assets>
+        <icon>resources/icon.png</icon>
+    </assets>
   </extension>
 </addon>
 </addons>
